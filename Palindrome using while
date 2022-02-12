@@ -1,0 +1,11 @@
+s = input()
+i = -1
+ns = ''
+
+while i >= -len(s):
+    ns = ns+s[i]
+    i = i-1
+if s == ns:
+    print('It is a palindrome')
+else:
+    print('It is not a palindrome')
