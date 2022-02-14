@@ -1,0 +1,13 @@
+s = input()
+l = list(s)
+len_s = len(l)
+m = ''
+
+for i in range(len_s - 1):
+    for  j in range(len_s -i -1):
+        if l[j] > l[j+1]:
+            l[j], l[j+1] = l[j+1], l[j]
+            
+for k in l:
+    m += k
+print(m)
